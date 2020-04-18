@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.pluralsight.model.Speaker;
 
-public class HiebernateSpeakerRepositoryImpl implements SpeakerRepository {
+public class HibernateSpeakerRepositoryImpl implements SpeakerRepository {
 
 	
 	@Override
