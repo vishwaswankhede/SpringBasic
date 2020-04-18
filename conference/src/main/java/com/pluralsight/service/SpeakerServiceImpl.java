@@ -13,6 +13,7 @@ import com.pluralsight.repository.SpeakerRepository;
 @Component
 public class SpeakerServiceImpl implements SpeakerService {
 	
+	@Autowired
 	SpeakerRepository repository ;
 	
 	
