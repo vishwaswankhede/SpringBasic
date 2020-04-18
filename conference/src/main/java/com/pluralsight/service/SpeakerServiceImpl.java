@@ -9,7 +9,14 @@ import com.pluralsight.repository.SpeakerRepository;
 public class SpeakerServiceImpl implements SpeakerService {
 	
 	SpeakerRepository repository ;
+	
+	
 		
+	public SpeakerServiceImpl(SpeakerRepository repository) {
+		super();
+		this.repository = repository;
+	}
+
 	@Override
 	public List<Speaker> findAll(){
 		return repository.finaAll();
