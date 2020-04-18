@@ -8,12 +8,22 @@ import com.pluralsight.repository.SpeakerRepository;
 
 public class SpeakerServiceImpl implements SpeakerService {
 	
-	SpeakerRepository repository =  new HibernateSpeakerRepositoryImpl();
-	
+	SpeakerRepository repository ;
+		
 	@Override
 	public List<Speaker> findAll(){
 		return repository.finaAll();
 		
 	}
+
+	public SpeakerRepository getRepository() {
+		return repository;
+	}
+
+	public void setRepository(SpeakerRepository repository) {
+		this.repository = repository;
+	}
+	
+	
 
 }
