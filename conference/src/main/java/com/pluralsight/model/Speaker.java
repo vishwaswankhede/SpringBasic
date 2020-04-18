@@ -1,6 +1,6 @@
 package com.pluralsight.model;
 
-public class Student {
+public class Speaker {
 
 	private String firstName;
 	private String lasttName;
