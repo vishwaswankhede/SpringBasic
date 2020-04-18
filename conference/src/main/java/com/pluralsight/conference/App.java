@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.pluralsight.service.SpeakerService;
+import com.pluralsight.service.SpeakerServiceImpl;
 
 /**
  * Hello world!
@@ -16,7 +17,7 @@ public class App
         System.out.println( "Hello World!" );
         
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        SpeakerService service = context.getBean(SpeakerService.class);
+        SpeakerService service = context.getBean(SpeakerServiceImpl.class);
         System.out.println(service.findAll().get(0).getFirstName());
         
     }
